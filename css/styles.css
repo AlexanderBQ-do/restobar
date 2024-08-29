@@ -1,0 +1,339 @@
+/* Reset general de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.045);
+    padding: 20px 0;
+    margin-bottom: 80px; /* Separación entre el header y la siguiente sección */
+}
+
+.logo-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.main-menu {
+    flex: 3;
+    text-align: right;
+}
+
+.main-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-menu ul li {
+    margin: 0 10px;
+}
+
+.main-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.main-menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+/* Carrusel de imágenes */
+.carousel-inner .carousel-item {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+
+.carousel-inner .btn-banner {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-inner .btn-banner:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+}
+
+/* Descripción del restaurante */
+.banner-description {
+    padding: 50px 0;
+    background-color: #fff;
+    margin-top: 30px; /* Separación entre el carrusel y la descripción */
+}
+
+.banner-description .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.banner-description img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.banner-description h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.banner-description p {
+    line-height: 1.8;
+}
+
+/* Galería de productos */
+#product-gallery {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 30px; /* Separación entre la descripción y la galería */
+}
+
+#product-gallery h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+#product-gallery .gallery-item {
+    width: calc(100% / 3);
+    float: left;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#product-gallery .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#product-gallery .gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Tarjetas de información */
+.tarjetas {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    margin-top: 30px; /* Separación entre la galería de productos y las tarjetas */
+}
+
+.tarjetas .card {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetas .card-icon {
+    max-width: 80px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.tarjetas h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.tarjetas p {
+    margin-bottom: 20px;
+    color: #666;
+    text-align: center;
+}
+
+.tarjetas .menu-link {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.tarjetas .menu-link:hover {
+    color: #ff4500;
+}
+
+/* Ubicación y formulario de reserva */
+#ubicacion {
+    padding: 50px 0;
+    background-color: #fff;
+    margin-top: 30px; /* Separación entre las tarjetas y la sección de ubicación */
+}
+
+#ubicacion h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+#ubicacion img {
+    margin-left: 10px;
+    max-width: 30px;
+    height: auto;
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+}
+
+form .form-control {
+    margin-bottom: 15px;
+}
+
+form .btn-primary {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 30px; /* Separación entre la sección anterior y el pie de página */
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+footer .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+footer .info .icon {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+footer .social-icons img {
+    max-width: 30px;
+}
+
+footer .quick-links {
+    list-style: none;
+    padding: 0;
+}
+
+footer .quick-links li {
+    margin-bottom: 10px;
+}
+
+footer .quick-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .quick-links li a:hover {
+    color: #ff6347;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer form input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6347;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer form button:hover {
+    background-color: #ff4500;
+}
+
+footer .text-center {
+    margin-top: 20px;
+}

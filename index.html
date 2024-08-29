@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Puerto del Sabor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Incluye tu archivo de estilos personalizados -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome para iconos -->
+</head>
+<body>
+    <header>
+        <div class="logo-menu">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#reservas">Reservas</a></li>
+                    <li><a href="#redes">Redes</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ 
+    <!-- Carrusel de imágenes -->
+    <div id="banner-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('img/banner-1.jpg');">
+            </div>
+            <div class="carousel-item" style="background-image: url('img/banner-2.jpg');">
+            </div>
+            <div class="carousel-item" style="background-image: url('img/banner-3.jpg');">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#banner-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#banner-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div><br><br><br>
+
+    <!-- Descripción del restaurante -->
+    <section class="banner-description">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="img/chef1.png" alt="Imagen Descriptiva" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h2>Descubre El Puerto del Sabor</h2>
+                    <p>El Puerto del Sabor te invita a disfrutar de una experiencia culinaria única en un ambiente acogedor y familiar. Nuestro restaurante se especializa en platos tradicionales con un toque contemporáneo, utilizando ingredientes frescos y de alta calidad. Desde nuestros exquisitos mariscos hasta nuestras carnes asadas a la parrilla, cada plato está preparado con pasión y cuidado para satisfacer hasta los paladares más exigentes.</p>
+                    <p>Ven y descubre por qué somos la elección preferida de aquellos que buscan disfrutar de buena comida en un entorno agradable. Además, contamos con opciones para todo tipo de eventos y celebraciones, garantizando momentos memorables para ti y tus seres queridos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de platos -->
+    <div id="product-gallery">
+        <h2 style="text-align: center; margin-bottom: 30px;">Platos Destacados</h2>
+        <div class="gallery-item">
+            <img src="img/producto1.jpg" alt="Producto 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/producto2.jpg" alt="Producto 2">
+        </div>
+        <div class="gallery-item">
+            <img src="img/producto3.jpg" alt="Producto 3">
+        </div>
+        <div class="gallery-item">
+            <img src="img/producto4.jpg" alt="Producto 4">
+        </div>
+        <div class="gallery-item">
+            <img src="img/producto5.jpg" alt="Producto 5">
+        </div>
+        <div class="gallery-item">
+            <img src="img/producto6.jpg" alt="Producto 6">
+        </div>
+    </div>
+
+
+
+    <div id="product-gallery">
+        <h2 style="text-align: center; margin-bottom: 30px;"> .</h2>
+        <div class="gallery-item">
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Galería de cocteles -->
+
+    <div id="product-gallery">
+        <h2 style="text-align: center; margin-bottom: 30px;">Cocteles Destacados</h2>
+        <div class="gallery-item">
+            <img src="img/coctel1.jpg" alt="Producto 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/coctel2.jpg" alt="Producto 2">
+        </div>
+        <div class="gallery-item">
+            <img src="img/coctel3.jpg" alt="Producto 3">
+        </div>
+    </div>
+
+    <div id="product-gallery">
+        <h2 style="text-align: center; margin-bottom: 30px;"> .</h2>
+        <div class="gallery-item">
+        </div>
+        </div>
+    </div>
+
+
+<!-- Galería de imágenes y tarjetas -->
+<section class="tarjetas">
+    <div class="container">
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/hambur.png" alt="Hamburguesas" class="card-icon">
+                    <h3>Hamburguesas</h3>
+                    <p>Deliciosas hamburguesas con los mejores ingredientes.</p>
+                    <a href="#menu" class="menu-link">Ver Menú</a>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/aperi.png" alt="Aperitivos" class="card-icon">
+                    <h3>Aperitivos</h3>
+                    <p>Sabrosos aperitivos para comenzar tu comida.</p>
+                    <a href="#menu" class="menu-link">Ver Menú</a>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/barr.png" alt="Bebidas" class="card-icon">
+                    <h3>Bebidas</h3>
+                    <p>Refrescantes bebidas para acompañar tus platos.</p>
+                    <a href="#menu" class="menu-link">Ver Menú</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Sección de mapa y formulario de reserva -->
+<section id="ubicacion" class="mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- Mapa de ubicación -->
+            <div class="col-md-6">
+                <h2>Ubicación <img src="img/gps2.png" alt="Icono Ubicación"></h2>
+                <!-- Inserta aquí tu mapa utilizando un iframe de Google Maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1920.7623285302456!2d-99.14554364315767!3d19.41655624601108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff42715d7d77%3A0xb2e7042788ee55cf!2sExample%20Restaurant!5e0!3m2!1sen!2sus!4v1622106482010!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <!-- Formulario de reserva -->
+            <div class="col-md-6">
+                <h2><img src="img/reserva.png" alt="Icono Mesa">-Reservación de Mesa-<img src="img/reserva.png" alt="Icono Mesa"> </h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nombre"><img src="img/nombre.png" alt="Icono Mesa">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono"><img src="img/cell2.png" alt="Icono Mesa">Teléfono:</label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha"><img src="img/fecha.png" alt="Icono Mesa">Fecha:</label>
+                        <input type="date" class="form-control" id="fecha" name="fecha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comensales"><img src="img/lista.png" alt="Icono Mesa">Número de Comensales:</label>
+                        <input type="number" class="form-control" id="comensales" name="comensales" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Reservar Mesa</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <!-- Primera columna: Nuestra Dirección -->
+            <div class="col-md-4">
+                <h3>Nuestra Dirección</h3>
+                <div class="info">
+                    <img src="img/gps.png" alt="Icono Dirección" class="icon">
+                    <p>Calle Falsa 123, Ciudad, País</p>
+                </div>
+                <div class="info">
+                    <img src="img/cell.png" alt="Icono Teléfono" class="icon">
+                    <p>+123 456 789</p>
+                </div>
+                <div class="info">
+                    <img src="img/mail.png" alt="Icono Correo" class="icon">
+                    <p>contacto@elpuertodelsabor.com</p>
+                </div>
+                <div class="social-icons">
+                    <img src="img/insta.png" alt="Icono Red Social">
+                    <img src="img/face.png" alt="Icono Red Social">
+                    <img src="img/X.png" alt="Icono Red Social">
+                </div>
+            </div>
+
+            <!-- Segunda columna: Enlaces Rápidos -->
+            <div class="col-md-4">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="quick-links">
+                    <li><a href="#">Condiciones de Uso</a></li>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Galletas</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+
+            <!-- Tercera columna: Boletín Informativo -->
+            <div class="col-md-4">
+                <h3>Boletín Informativo</h3>
+                <p>Suscríbete a nuestro boletín informativo para recibir las últimas noticias y ofertas especiales.</p>
+                <form action="#">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <p>&copy; 2024 El Puerto del Sabor. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
